@@ -60,7 +60,7 @@
     }];
 
     
-    [self cancelButtonPushed:nil];
+    [self cancelButtonPushed:self];
 }
 - (IBAction)cancelButtonPushed:(id)sender {
     [self dismissViewController:self];

@@ -15,6 +15,7 @@
 		0823207A1A62BDFA00DCD65F /* New_PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082320791A62BDFA00DCD65F /* New_PageViewController.m */; };
 		0823207D1A63128900DCD65F /* New_ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0823207C1A63128900DCD65F /* New_ProjectViewController.m */; };
 		082320801A6312A000DCD65F /* New_CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0823207F1A6312A000DCD65F /* New_CategoryViewController.m */; };
+		084760EF1A63200F003038D5 /* New_CreateFileStoryBoardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 084760EE1A63200F003038D5 /* New_CreateFileStoryBoardSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		0823207C1A63128900DCD65F /* New_ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New_ProjectViewController.m; sourceTree = "<group>"; };
 		0823207E1A6312A000DCD65F /* New_CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = New_CategoryViewController.h; sourceTree = "<group>"; };
 		0823207F1A6312A000DCD65F /* New_CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New_CategoryViewController.m; sourceTree = "<group>"; };
+		084760ED1A63200F003038D5 /* New_CreateFileStoryBoardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = New_CreateFileStoryBoardSegue.h; sourceTree = "<group>"; };
+		084760EE1A63200F003038D5 /* New_CreateFileStoryBoardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New_CreateFileStoryBoardSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				0823207C1A63128900DCD65F /* New_ProjectViewController.m */,
 				0823207E1A6312A000DCD65F /* New_CategoryViewController.h */,
 				0823207F1A6312A000DCD65F /* New_CategoryViewController.m */,
+				084760ED1A63200F003038D5 /* New_CreateFileStoryBoardSegue.h */,
+				084760EE1A63200F003038D5 /* New_CreateFileStoryBoardSegue.m */,
 			);
 			name = CreatorViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				0823205E1A62BA7400DCD65F /* ViewController.m in Sources */,
 				0823205B1A62BA7400DCD65F /* main.m in Sources */,
 				082320591A62BA7400DCD65F /* AppDelegate.m in Sources */,
+				084760EF1A63200F003038D5 /* New_CreateFileStoryBoardSegue.m in Sources */,
 				082320801A6312A000DCD65F /* New_CategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

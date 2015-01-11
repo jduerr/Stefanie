@@ -49,7 +49,7 @@
         }
     }];
     
-    [self cancelButtonPushed:nil];
+    [self cancelButtonPushed:self];
 
 }
 

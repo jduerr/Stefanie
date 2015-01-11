@@ -41,20 +41,15 @@
         
         if (result == NSFileHandlingPanelOKButton) {
             
-            // create a file namaner and grab the save panel's returned URL
-            NSFileManager *manager = [NSFileManager defaultManager];
             NSURL *saveURL = [panel URL];
             
-            
             NSError* err;
-            
             [entryString writeToURL:saveURL atomically:NO encoding:NSUTF8StringEncoding error:&err];
         }
     }];
     
-    [self cancelButtonPushed:nil];
+    [self cancelButtonPushed:self];
      
-    
 }
 
 - (IBAction)cancelButtonPushed:(id)sender {
