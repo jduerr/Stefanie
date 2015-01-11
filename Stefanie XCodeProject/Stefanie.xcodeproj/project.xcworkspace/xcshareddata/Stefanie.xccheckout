@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A8734CB5-9529-470D-B9BC-370B8D2656EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stefanie</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>557F0F9B54BFE929457AF10FB41987E19E6E1A89</key>
+		<string>https://github.com/jduerr/Stefanie.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stefanie XCodeProject/Stefanie.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>557F0F9B54BFE929457AF10FB41987E19E6E1A89</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jduerr/Stefanie.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>557F0F9B54BFE929457AF10FB41987E19E6E1A89</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>557F0F9B54BFE929457AF10FB41987E19E6E1A89</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Stefanie</string>
+		</dict>
+	</array>
+</dict>
+</plist>
