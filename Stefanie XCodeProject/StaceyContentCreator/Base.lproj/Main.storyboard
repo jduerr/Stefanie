@@ -655,8 +655,6 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="60"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="480" height="60"/>
-                        <value key="maxSize" type="size" width="480" height="60"/>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -666,10 +664,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--New Page View Controller-->
+        <!--Page-->
         <scene sceneID="FHT-57-iyx">
             <objects>
-                <viewController id="YPP-2S-i2M" customClass="New_PageViewController" sceneMemberID="viewController">
+                <viewController title="Page" storyboardIdentifier="Page" id="YPP-2S-i2M" customClass="New_PageViewController" sceneMemberID="viewController">
                     <view key="view" id="0f5-mW-OFg">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -736,25 +734,11 @@
                                     <action selector="saveButtonPushed:" target="YPP-2S-i2M" id="cm7-Qg-gDq"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="al5-iZ-eos">
-                                <rect key="frame" x="283" y="13" width="83" height="32"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cg1-tH-318">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="cancelButtonPushed:" target="YPP-2S-i2M" id="1df-ZQ-0rM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="iDr-8Y-5f9" firstAttribute="leading" secondItem="9E5-0u-fTK" secondAttribute="leading" id="6EH-1C-JyL"/>
                             <constraint firstAttribute="trailing" secondItem="iDr-8Y-5f9" secondAttribute="trailing" constant="20" id="Ago-db-H2j"/>
                             <constraint firstItem="iDr-8Y-5f9" firstAttribute="top" secondItem="9E5-0u-fTK" secondAttribute="bottom" constant="8" id="EiC-U0-l4I"/>
-                            <constraint firstAttribute="bottom" secondItem="al5-iZ-eos" secondAttribute="bottom" constant="20" id="Iqd-F0-i3e"/>
                             <constraint firstItem="iDr-8Y-5f9" firstAttribute="leading" secondItem="Sm6-HO-h8m" secondAttribute="leading" id="JrK-6d-e1P"/>
                             <constraint firstItem="dhT-vi-Zah" firstAttribute="leading" secondItem="0f5-mW-OFg" secondAttribute="leading" constant="20" id="TTe-ce-Xfu"/>
                             <constraint firstItem="HFh-WX-IOG" firstAttribute="top" secondItem="iDr-8Y-5f9" secondAttribute="bottom" constant="20" id="XQ9-cW-5DO"/>
@@ -763,7 +747,6 @@ Gw
                             <constraint firstItem="iDr-8Y-5f9" firstAttribute="leading" secondItem="dhT-vi-Zah" secondAttribute="leading" id="sqn-h1-H91"/>
                             <constraint firstAttribute="trailing" secondItem="dhT-vi-Zah" secondAttribute="trailing" constant="20" id="t0Z-oW-sVf"/>
                             <constraint firstItem="9E5-0u-fTK" firstAttribute="top" secondItem="Sm6-HO-h8m" secondAttribute="bottom" constant="8" id="uIY-7P-beH"/>
-                            <constraint firstItem="HFh-WX-IOG" firstAttribute="leading" secondItem="al5-iZ-eos" secondAttribute="trailing" constant="11" id="ua0-UR-QOy"/>
                             <constraint firstAttribute="trailing" secondItem="9E5-0u-fTK" secondAttribute="trailing" constant="20" id="x5D-oM-QjC"/>
                             <constraint firstAttribute="trailing" secondItem="Sm6-HO-h8m" secondAttribute="trailing" constant="20" id="xNq-zW-vox"/>
                             <constraint firstAttribute="bottom" secondItem="HFh-WX-IOG" secondAttribute="bottom" constant="20" id="xm8-Ah-6uE"/>
@@ -777,12 +760,12 @@ Gw
                 </viewController>
                 <customObject id="2Ij-3i-vC0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="235"/>
+            <point key="canvasLocation" x="559" y="554"/>
         </scene>
         <!--New Project View Controller-->
         <scene sceneID="Ysb-s2-kk8">
             <objects>
-                <viewController id="JWk-tD-WDI" customClass="New_ProjectViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Project" id="JWk-tD-WDI" customClass="New_ProjectViewController" sceneMemberID="viewController">
                     <view key="view" id="Flb-2B-Fi8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="437"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -865,25 +848,10 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-Go-zWi">
-                                <rect key="frame" x="282" y="13" width="83" height="32"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ve9-zh-73x">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="cancelButtonPushed:" target="JWk-tD-WDI" id="cZk-2f-RlD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="1rb-2b-a9j" firstAttribute="top" secondItem="Ccc-ac-w8F" secondAttribute="bottom" constant="8" id="1ux-NN-cMT"/>
-                            <constraint firstAttribute="bottom" secondItem="AJe-Go-zWi" secondAttribute="bottom" constant="20" id="8mp-go-c9L"/>
                             <constraint firstItem="KxE-7N-h1T" firstAttribute="top" secondItem="4Aq-0z-sCe" secondAttribute="bottom" constant="20" id="AQC-lY-ivl"/>
-                            <constraint firstItem="KxE-7N-h1T" firstAttribute="leading" secondItem="AJe-Go-zWi" secondAttribute="trailing" constant="12" id="Dqo-p7-Tx0"/>
                             <constraint firstItem="MJo-Pi-dqy" firstAttribute="top" secondItem="Flb-2B-Fi8" secondAttribute="top" constant="20" id="JAx-Qm-cSs"/>
                             <constraint firstItem="MJo-Pi-dqy" firstAttribute="leading" secondItem="1sD-vZ-Qc2" secondAttribute="leading" id="KzQ-9Y-Q4c"/>
                             <constraint firstItem="MJo-Pi-dqy" firstAttribute="trailing" secondItem="4Aq-0z-sCe" secondAttribute="trailing" id="L23-so-vXE"/>
@@ -913,12 +881,12 @@ Gw
                 </viewController>
                 <customObject id="jnd-0X-qe9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="682.5"/>
+            <point key="canvasLocation" x="1029" y="745.5"/>
         </scene>
         <!--New Category View Controller-->
         <scene sceneID="2iI-za-dsf">
             <objects>
-                <viewController id="axa-2a-gEM" customClass="New_CategoryViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Category" id="axa-2a-gEM" customClass="New_CategoryViewController" sceneMemberID="viewController">
                     <view key="view" id="WkD-ts-uKl">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -985,28 +953,13 @@ Gw
                                     <action selector="saveButtonPushed:" target="axa-2a-gEM" id="AxK-Yi-VNb"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-ZH-EsB">
-                                <rect key="frame" x="282" y="13" width="83" height="32"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LRx-tg-hiT">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="cancelButtonPushed:" target="axa-2a-gEM" id="QbL-vZ-YuU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="MXV-go-miK" firstAttribute="top" secondItem="WkD-ts-uKl" secondAttribute="top" constant="20" id="3Oe-rO-tOX"/>
                             <constraint firstItem="doi-pY-yH4" firstAttribute="trailing" secondItem="rhc-nV-Prf" secondAttribute="trailing" id="3fv-pa-RWL"/>
-                            <constraint firstItem="mK4-Wk-Uxh" firstAttribute="leading" secondItem="m3p-ZH-EsB" secondAttribute="trailing" constant="12" id="5PO-Fd-oZG"/>
                             <constraint firstAttribute="bottom" secondItem="mK4-Wk-Uxh" secondAttribute="bottom" constant="20" id="DiJ-9P-LWg"/>
                             <constraint firstItem="mK4-Wk-Uxh" firstAttribute="top" secondItem="jhw-SP-nXp" secondAttribute="bottom" constant="20" id="Kw4-2d-zKO"/>
                             <constraint firstItem="doi-pY-yH4" firstAttribute="leading" secondItem="rhc-nV-Prf" secondAttribute="leading" id="MQg-qQ-Ssc"/>
-                            <constraint firstAttribute="bottom" secondItem="m3p-ZH-EsB" secondAttribute="bottom" constant="20" id="QMQ-GJ-1Aw"/>
                             <constraint firstAttribute="trailing" secondItem="mK4-Wk-Uxh" secondAttribute="trailing" constant="20" id="Rmh-Pl-bwY"/>
                             <constraint firstItem="doi-pY-yH4" firstAttribute="trailing" secondItem="jhw-SP-nXp" secondAttribute="trailing" id="eiQ-Oa-ORc"/>
                             <constraint firstItem="doi-pY-yH4" firstAttribute="trailing" secondItem="MXV-go-miK" secondAttribute="trailing" id="hJ2-mf-5Tm"/>
@@ -1033,14 +986,14 @@ Gw
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="763" height="566"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-QL-7AV">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="59"/>
+                                <rect key="frame" x="0.0" y="0.0" width="763" height="566"/>
                                 <subviews>
                                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-jE-Lzj">
-                                        <rect key="frame" x="18" y="16" width="445" height="26"/>
+                                        <rect key="frame" x="18" y="523" width="728" height="26"/>
                                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="okE-Cs-k2g">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu"/>
@@ -1048,28 +1001,35 @@ Gw
                                                 <items>
                                                     <menuItem title="Page (Standalone Stacey Page)" id="6G4-Wu-f9J">
                                                         <connections>
-                                                            <segue destination="YPP-2S-i2M" kind="custom" identifier="createPage" id="HXP-jk-c7U"/>
+                                                            <action selector="pageGotChosen:" target="XfG-lQ-9wD" id="Jm4-MI-xmE"/>
                                                         </connections>
                                                     </menuItem>
                                                     <menuItem title="Project (Project-Site within a Category)" id="hB8-oz-WAF">
                                                         <connections>
-                                                            <segue destination="JWk-tD-WDI" kind="custom" identifier="createProject" id="6Kr-lb-Voa"/>
+                                                            <action selector="categoryGotChosen:" target="XfG-lQ-9wD" id="fev-ol-bu6"/>
                                                         </connections>
                                                     </menuItem>
                                                     <menuItem title="Category (for hosting multiple Project-Sites)" id="MZ2-tb-ZBs">
                                                         <connections>
-                                                            <segue destination="axa-2a-gEM" kind="custom" identifier="createCategory" id="8rF-eZ-DRs"/>
+                                                            <action selector="projectGotChosen:" target="XfG-lQ-9wD" id="Huu-Gt-OY9"/>
                                                         </connections>
                                                     </menuItem>
                                                 </items>
                                             </menu>
                                         </popUpButtonCell>
                                     </popUpButton>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="lKf-mI-6Qz">
+                                        <rect key="frame" x="0.0" y="0.0" width="763" height="506"/>
+                                    </customView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lKf-mI-6Qz" secondAttribute="bottom" id="0id-rg-ElV"/>
                                     <constraint firstAttribute="trailing" secondItem="sKI-jE-Lzj" secondAttribute="trailing" constant="20" id="Fog-hP-zC4"/>
                                     <constraint firstItem="sKI-jE-Lzj" firstAttribute="leading" secondItem="iMj-QL-7AV" secondAttribute="leading" constant="20" id="P67-5X-Pdq"/>
+                                    <constraint firstItem="lKf-mI-6Qz" firstAttribute="top" secondItem="sKI-jE-Lzj" secondAttribute="bottom" constant="20" id="m2X-EK-toK"/>
+                                    <constraint firstItem="lKf-mI-6Qz" firstAttribute="leading" secondItem="iMj-QL-7AV" secondAttribute="leading" id="rSA-u5-Y8a"/>
                                     <constraint firstItem="sKI-jE-Lzj" firstAttribute="top" secondItem="iMj-QL-7AV" secondAttribute="top" constant="19" id="syu-QL-i3D"/>
+                                    <constraint firstAttribute="trailing" secondItem="lKf-mI-6Qz" secondAttribute="trailing" id="yXX-dV-1ra"/>
                                 </constraints>
                             </visualEffectView>
                         </subviews>
@@ -1080,10 +1040,13 @@ Gw
                             <constraint firstAttribute="trailing" secondItem="iMj-QL-7AV" secondAttribute="trailing" id="pCM-mY-UWB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tempView" destination="lKf-mI-6Qz" id="xik-Je-GMs"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="549.5"/>
+            <point key="canvasLocation" x="-66.5" y="803"/>
         </scene>
     </scenes>
 </document>

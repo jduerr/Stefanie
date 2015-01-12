@@ -9,5 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property (weak) IBOutlet NSView *tempView;
+
+
+- (IBAction)pageGotChosen:(id)sender;
+- (IBAction)categoryGotChosen:(id)sender;
+
+- (IBAction)projectGotChosen:(id)sender;
 @end
 

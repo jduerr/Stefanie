@@ -47,22 +47,20 @@
     [panel setNameFieldStringValue:@"project.txt"];
     
     // display the panel
-    [panel beginWithCompletionHandler:^(NSInteger result) {
+    [panel beginSheetModalForWindow:[[self view]window] completionHandler:^(NSInteger result) {
         
         if (result == NSFileHandlingPanelOKButton) {
             
             NSURL *saveURL = [panel URL];
             
             NSError* err;
-            
             [entryString writeToURL:saveURL atomically:NO encoding:NSUTF8StringEncoding error:&err];
         }
     }];
-
     
     [self cancelButtonPushed:self];
 }
 - (IBAction)cancelButtonPushed:(id)sender {
-    [self dismissViewController:self];
+    [self removeFromParentViewController];
 }
 @end

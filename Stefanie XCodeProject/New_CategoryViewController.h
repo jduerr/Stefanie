@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface New_CategoryViewController : ViewController
+@interface New_CategoryViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *titleTextField;
 @property (unsafe_unretained) IBOutlet NSTextView *descriptionTextView;
