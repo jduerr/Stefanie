@@ -25,6 +25,8 @@
     NSDate *date = [NSDate date];
     NSString *dateString = [dateFormatter stringFromDate:date];
     [self.dateTextView setStringValue:dateString];
+    
+    theTextView = self.contentTextView;
 }
 
 - (IBAction)saveButtonPushed:(id)sender {
@@ -40,23 +42,7 @@
     // Add content
     [entryString appendString:[NSString stringWithFormat:@"content:\n\n%@\n", self.contentTextView.string]];
     
-    // create the save panel
-    NSSavePanel *panel = [NSSavePanel savePanel];
-    
-    // set a new file name
-    [panel setNameFieldStringValue:@"project.txt"];
-    
-    // display the panel
-    [panel beginSheetModalForWindow:[[self view]window] completionHandler:^(NSInteger result) {
-        
-        if (result == NSFileHandlingPanelOKButton) {
-            
-            NSURL *saveURL = [panel URL];
-            
-            NSError* err;
-            [entryString writeToURL:saveURL atomically:NO encoding:NSUTF8StringEncoding error:&err];
-        }
-    }];
+    [self saveContentString:entryString withFilename:@"project.txt" andImage:self.thumbnailImageWell.image andFolderName:self.folderNameTextField.stringValue];
     
     [self cancelButtonPushed:self];
 }

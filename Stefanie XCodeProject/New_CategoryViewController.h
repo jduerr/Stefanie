@@ -6,12 +6,14 @@
 //  Copyright (c) 2015 Johannes Dürr. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <Cocoa/Cocoa.h>
+#import "New_ContentViewController.h"
 
-@interface New_CategoryViewController : NSViewController
+@interface New_CategoryViewController : New_ContentViewController
 
 @property (weak) IBOutlet NSTextField *titleTextField;
 @property (unsafe_unretained) IBOutlet NSTextView *descriptionTextView;
+
 - (IBAction)saveButtonPushed:(id)sender;
 - (IBAction)cancelButtonPushed:(id)sender;
 

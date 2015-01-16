@@ -14,7 +14,6 @@
 
 - (IBAction)pageGotChosen:(id)sender;
 - (IBAction)categoryGotChosen:(id)sender;
-
 - (IBAction)projectGotChosen:(id)sender;
 @end
 

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    theTextView = self.contentTextView;
 }
 
 - (IBAction)saveButtonPushed:(id)sender {
@@ -30,29 +31,14 @@
     // Add content
     [entryString appendString:[NSString stringWithFormat:@"content:\n\n%@\n", self.contentTextView.string]];
     
-    // create the save panel
-    NSSavePanel *panel = [NSSavePanel savePanel];
+    [self saveContentString:entryString withFilename:@"page.txt" andImage:self.thumbImageWell.image andFolderName:self.folderNameTextField.stringValue];
     
-    // set a new file name
-    [panel setNameFieldStringValue:@"page.txt"];
     
-    // display the panel
-    [panel beginSheetModalForWindow:[[self view]window] completionHandler:^(NSInteger result) {
-        
-        if (result == NSFileHandlingPanelOKButton) {
-            
-            NSURL *saveURL = [panel URL];
-            
-            NSError* err;
-            [entryString writeToURL:saveURL atomically:NO encoding:NSUTF8StringEncoding error:&err];
-        }
-    }];
-    
-    [self cancelButtonPushed:self];
+    [self removeFromSuperView:self];
      
 }
 
-- (IBAction)cancelButtonPushed:(id)sender {
+- (IBAction)removeFromSuperView:(id)sender {
     [self removeFromParentViewController];
 }
 @end
