@@ -180,6 +180,9 @@
 - (IBAction)addMarkup_Heading:(id)sender{
     NSLog([sender description]);
     NSToolbarItem* item = (NSToolbarItem*)sender;
+    
+    // Headlines
+    
     if([[item itemIdentifier]isEqualToString: @"h1" ]){
         [theTextView insertText:@"#"];
     }
@@ -189,9 +192,28 @@
     if([[item itemIdentifier]isEqualToString: @"h3" ]){
         [theTextView insertText:@"###"];
     }
-    
-    
 }
 
+- (IBAction)addMarkup_CodeSnippet:(id)sender{
+    // code snippet
+    [theTextView insertText:@"<pre class=\"prettyprint\">\n\n</pre>"];
+}
 
+- (IBAction)addMarkup_orderedList:(id)sender{
+    // ordered List
+    [theTextView insertText:@"\n1. \n2. \n3. \n"];
+}
+- (IBAction)addMarkup_unorderedList:(id)sender{
+    // ordered List
+    [theTextView insertText:@"\n* \n* \n* \n"];
+}
+- (IBAction)addMarkup_hyperlink:(id)sender{
+    // ordered List
+    [theTextView insertText:@"[Link Text](http://)"];
+}
+
+- (IBAction)addMarkup_imageFromLink:(id)sender{
+    // ordered List
+    [theTextView insertText:@" ![alt text](http://domain.tld/image.png \"PopUp-Text\") "];
+}
 @end

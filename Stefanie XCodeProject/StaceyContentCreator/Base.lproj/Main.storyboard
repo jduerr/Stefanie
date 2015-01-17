@@ -661,26 +661,50 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <toolbar key="toolbar" implicitIdentifier="30DF7AB0-FC29-4641-B5FD-DCD4AC5F1997" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="QXO-Oi-bhp">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="W3Z-FI-aur"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="XyY-Jg-hvl"/>
                                 <toolbarItem implicitItemIdentifier="B50D8BE6-6FA8-4FDF-B108-161887A564C8" label="Preferences" paletteLabel="Preferences" tag="-1" image="toolbar_preferences_icon" id="cH2-cO-QdA">
                                     <connections>
                                         <segue destination="kBs-aY-hcP" kind="show" id="kFU-NT-IPT"/>
                                     </connections>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="9587C9C9-A79A-4604-8D8C-2B2648408EB1" explicitItemIdentifier="h1" label="H1" paletteLabel="H1" tag="-1" id="QTf-uu-VXj">
+                                <toolbarItem implicitItemIdentifier="9587C9C9-A79A-4604-8D8C-2B2648408EB1" explicitItemIdentifier="h1" label="H1" paletteLabel="Headline 1" tag="-1" image="toolbar_head1" id="QTf-uu-VXj">
                                     <connections>
                                         <action selector="addMarkup_Heading:" target="Oky-zY-oP4" id="tvA-0K-lqp"/>
                                     </connections>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="3725CDD3-6818-4540-A83B-B8A2988EBC28" explicitItemIdentifier="h2" label="H2" paletteLabel="H2" tag="-1" id="zXH-fL-2SW">
+                                <toolbarItem implicitItemIdentifier="3725CDD3-6818-4540-A83B-B8A2988EBC28" explicitItemIdentifier="h2" label="H2" paletteLabel="Headline 2" tag="-1" image="toolbar_head2" id="zXH-fL-2SW">
                                     <connections>
                                         <action selector="addMarkup_Heading:" target="Oky-zY-oP4" id="rHZ-ho-Coz"/>
                                     </connections>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="6ACD59D8-9B6E-410A-89C4-256ABC315C9D" explicitItemIdentifier="h3" label="H3" paletteLabel="H3" tag="-1" id="zyi-ef-ai3">
+                                <toolbarItem implicitItemIdentifier="6ACD59D8-9B6E-410A-89C4-256ABC315C9D" explicitItemIdentifier="h3" label="H3" paletteLabel="Headline 3" tag="-1" image="toolbar_head3" id="zyi-ef-ai3">
                                     <connections>
                                         <action selector="addMarkup_Heading:" target="Oky-zY-oP4" id="tSe-JX-3TA"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="CF73CD88-6D3C-4E4D-9E69-367A77A0922D" label="code" paletteLabel="Code-Snippet" tag="-1" image="toolbar_code" id="rqF-Q7-x7w">
+                                    <connections>
+                                        <action selector="addMarkup_CodeSnippet:" target="Oky-zY-oP4" id="7vP-QV-aaL"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="A4CC61F5-2309-46A9-8436-BC1EAED6CD56" label="ol" paletteLabel="Ordered List" tag="-1" image="toolbar_OrderedList" id="Ig9-Vd-dhE">
+                                    <connections>
+                                        <action selector="addMarkup_orderedList:" target="Oky-zY-oP4" id="r5t-ud-MYY"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="4553AB09-E7BB-4500-9AB9-7A20233E7E63" label="ul" paletteLabel="Unordered List" tag="-1" image="toolbar_unorderedList" id="g8S-fI-Nrg">
+                                    <connections>
+                                        <action selector="addMarkup_unorderedList:" target="Oky-zY-oP4" id="IAv-UA-lHI"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="A11BC10E-46D2-4004-86BE-2B8D971CCBA1" label="Link" paletteLabel="Hyperlink" tag="-1" image="toolbar_textLink" id="Cf9-cu-ckz">
+                                    <connections>
+                                        <action selector="addMarkup_hyperlink:" target="Oky-zY-oP4" id="IOZ-7C-qvd"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="AEF561E1-DEA0-413E-876C-5FFE8FE5B0BC" label="img" paletteLabel="Image Link" tag="-1" image="toolbar_imageLink" id="MPJ-d6-rVu">
+                                    <connections>
+                                        <action selector="addMarkup_imageFromLink:" target="Oky-zY-oP4" id="23u-w8-TGy"/>
                                     </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>
@@ -690,7 +714,11 @@
                                 <toolbarItem reference="QTf-uu-VXj"/>
                                 <toolbarItem reference="zXH-fL-2SW"/>
                                 <toolbarItem reference="zyi-ef-ai3"/>
-                                <toolbarItem reference="W3Z-FI-aur"/>
+                                <toolbarItem reference="Ig9-Vd-dhE"/>
+                                <toolbarItem reference="g8S-fI-Nrg"/>
+                                <toolbarItem reference="Cf9-cu-ckz"/>
+                                <toolbarItem reference="MPJ-d6-rVu"/>
+                                <toolbarItem reference="rqF-Q7-x7w"/>
                             </defaultToolbarItems>
                         </toolbar>
                     </window>
@@ -1286,7 +1314,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="toolbar_OrderedList" width="32" height="32"/>
+        <image name="toolbar_code" width="32" height="32"/>
+        <image name="toolbar_head1" width="32" height="32"/>
+        <image name="toolbar_head2" width="32" height="32"/>
+        <image name="toolbar_head3" width="32" height="32"/>
+        <image name="toolbar_imageLink" width="32" height="32"/>
         <image name="toolbar_preferences_icon" width="32" height="32"/>
+        <image name="toolbar_textLink" width="32" height="32"/>
+        <image name="toolbar_unorderedList" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kFU-NT-IPT"/>
