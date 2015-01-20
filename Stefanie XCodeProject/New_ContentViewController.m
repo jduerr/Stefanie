@@ -178,7 +178,6 @@
 #pragma mark - addMarkup methods
 
 - (IBAction)addMarkup_Heading:(id)sender{
-    NSLog([sender description]);
     NSToolbarItem* item = (NSToolbarItem*)sender;
     
     // Headlines
@@ -216,4 +215,17 @@
     // ordered List
     [theTextView insertText:@" ![alt text](http://domain.tld/image.png \"PopUp-Text\") "];
 }
+
+- (IBAction)addMarkup_table:(id)sender{
+    // ordered List
+    [theTextView insertText:@"     | Tables        | Are           | Cool  |\n     | ------------- |:-------------:| -----:|\n     | col 3 is      | right-aligned | $1600 |\n     | col 2 is      | centered      |   $12 |\n     | zebra stripes | are neat      |    $1 |\n"];
+}
+
+- (IBAction)addMarkup_blockquote:(id)sender{
+    // ordered List
+    [theTextView insertText:@"\n\n> \n"];
+}
+
+
+
 @end

@@ -707,6 +707,17 @@
                                         <action selector="addMarkup_imageFromLink:" target="Oky-zY-oP4" id="23u-w8-TGy"/>
                                     </connections>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="55FE9AF9-922F-4732-8399-CF760022B7C8" label="Quote" paletteLabel="Blockquote" tag="-1" image="toolbar_blockquote" id="lI9-Ww-oc7">
+                                    <connections>
+                                        <action selector="addMarkup_blockquote:" target="Oky-zY-oP4" id="AFh-RQ-EAE"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="26681E85-D4F5-45D3-9251-845FA0225FBF" label="Table" paletteLabel="HTML-Table" tag="-1" image="toolbar_table" id="7kV-VX-2Jf">
+                                    <connections>
+                                        <action selector="addMarkup_table:" target="Oky-zY-oP4" id="zCz-sV-bkC"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="JxT-TE-2zt"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="cH2-cO-QdA"/>
@@ -714,8 +725,12 @@
                                 <toolbarItem reference="QTf-uu-VXj"/>
                                 <toolbarItem reference="zXH-fL-2SW"/>
                                 <toolbarItem reference="zyi-ef-ai3"/>
+                                <toolbarItem reference="JxT-TE-2zt"/>
+                                <toolbarItem reference="lI9-Ww-oc7"/>
                                 <toolbarItem reference="Ig9-Vd-dhE"/>
                                 <toolbarItem reference="g8S-fI-Nrg"/>
+                                <toolbarItem reference="7kV-VX-2Jf"/>
+                                <toolbarItem reference="JxT-TE-2zt"/>
                                 <toolbarItem reference="Cf9-cu-ckz"/>
                                 <toolbarItem reference="MPJ-d6-rVu"/>
                                 <toolbarItem reference="rqF-Q7-x7w"/>
@@ -730,10 +745,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Preferences View Controller-->
+        <!--Preferences-->
         <scene sceneID="lNo-ZL-6qt">
             <objects>
-                <viewController id="kBs-aY-hcP" customClass="PreferencesViewController" sceneMemberID="viewController">
+                <viewController title="Preferences" showSeguePresentationStyle="single" id="kBs-aY-hcP" customClass="PreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="RnY-e0-xBj">
                         <rect key="frame" x="0.0" y="0.0" width="213" height="142"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1315,12 +1330,14 @@
     </scenes>
     <resources>
         <image name="toolbar_OrderedList" width="32" height="32"/>
+        <image name="toolbar_blockquote" width="32" height="32"/>
         <image name="toolbar_code" width="32" height="32"/>
         <image name="toolbar_head1" width="32" height="32"/>
         <image name="toolbar_head2" width="32" height="32"/>
         <image name="toolbar_head3" width="32" height="32"/>
         <image name="toolbar_imageLink" width="32" height="32"/>
         <image name="toolbar_preferences_icon" width="32" height="32"/>
+        <image name="toolbar_table" width="32" height="32"/>
         <image name="toolbar_textLink" width="32" height="32"/>
         <image name="toolbar_unorderedList" width="32" height="32"/>
     </resources>
